@@ -1,0 +1,8 @@
+version: "3"
+services:
+  web:
+    image: .
+    container_name: tba-api-server
+    restart: unless-stopped
+    ports:
+      - "4823:8180"
